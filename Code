@@ -1,0 +1,13 @@
+Mot1= input('saisissez votre mot: ')
+Mot2 = ''
+def fct_palindrome(Mot1):
+    global Mot2
+    for lettre in reversed(Mot1):
+        Mot2= Mot2 +lettre
+    if Mot1.lower()==Mot2.lower():
+        print("Le mot est bien un palindrome")
+    else:
+        print("Votre mot n'est pas un palindrome")
+
+
+fct_palindrome(Mot1)
